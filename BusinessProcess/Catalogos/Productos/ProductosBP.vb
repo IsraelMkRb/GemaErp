@@ -13,4 +13,19 @@
         Next
         Return result
     End Function
+
+    Public Shared Function NewID() As Integer
+        Dim listaArticulos As BusinessEntities.ListaProductos = DataAcess.ProductosDA.GetList
+
+        Dim lastID As Integer = listaArticulos.Last.ID
+        Return lastID + 1
+    End Function
+
+    Public Shared Sub Save(NuevoArticulo As BusinessEntities.Producto)
+        DataAcess.ProductosDA.Save(NuevoArticulo)
+    End Sub
+
+    Public Shared Sub Delete(Articulo As BusinessEntities.Producto)
+        DataAcess.ProductosDA.Delete(Articulo)
+    End Sub
 End Class

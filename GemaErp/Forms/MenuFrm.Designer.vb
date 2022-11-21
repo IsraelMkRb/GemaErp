@@ -35,6 +35,8 @@
         Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.DocumentManager1 = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
         Me.TabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
+        Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RegistrarProveedorBtn = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,12 +45,14 @@
         'ribbonControl1
         '
         Me.ribbonControl1.ExpandCollapseItem.Id = 0
-        Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.RegistrarOCButton, Me.ProductoRegistrarBtn})
+        Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.RegistrarOCButton, Me.ProductoRegistrarBtn, Me.RegistrarProveedorBtn})
         Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
-        Me.ribbonControl1.MaxItemId = 3
+        Me.ribbonControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.ribbonControl1.MaxItemId = 4
         Me.ribbonControl1.Name = "ribbonControl1"
+        Me.ribbonControl1.OptionsMenuMinWidth = 385
         Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1, Me.RibbonPage2})
-        Me.ribbonControl1.Size = New System.Drawing.Size(758, 158)
+        Me.ribbonControl1.Size = New System.Drawing.Size(884, 193)
         '
         'RegistrarOCButton
         '
@@ -70,7 +74,7 @@
         '
         'ribbonPage1
         '
-        Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1})
+        Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1, Me.RibbonPageGroup3})
         Me.ribbonPage1.Name = "ribbonPage1"
         Me.ribbonPage1.Text = "Compras"
         '
@@ -99,17 +103,32 @@
         Me.DocumentManager1.View = Me.TabbedView1
         Me.DocumentManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedView1})
         '
+        'RibbonPageGroup3
+        '
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.RegistrarProveedorBtn)
+        Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
+        Me.RibbonPageGroup3.Text = "Proveedores"
+        '
+        'RegistrarProveedorBtn
+        '
+        Me.RegistrarProveedorBtn.Caption = "Registrar"
+        Me.RegistrarProveedorBtn.Id = 3
+        Me.RegistrarProveedorBtn.ImageOptions.Image = CType(resources.GetObject("BarButtonItem1.ImageOptions.Image"), System.Drawing.Image)
+        Me.RegistrarProveedorBtn.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem1.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.RegistrarProveedorBtn.Name = "RegistrarProveedorBtn"
+        '
         'MenuFrm
         '
         Me.Appearance.BackColor = System.Drawing.Color.White
         Me.Appearance.Options.UseBackColor = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Zoom
         Me.BackgroundImageStore = Global.GemaErp.My.Resources.Resources.wallpaper1
-        Me.ClientSize = New System.Drawing.Size(758, 360)
+        Me.ClientSize = New System.Drawing.Size(884, 443)
         Me.Controls.Add(Me.ribbonControl1)
         Me.IsMdiContainer = True
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "MenuFrm"
         Me.Ribbon = Me.ribbonControl1
         Me.Text = "GEMA"
@@ -133,4 +152,6 @@
     Friend WithEvents ProductoRegistrarBtn As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RibbonPage2 As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RegistrarProveedorBtn As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
 End Class

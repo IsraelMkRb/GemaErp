@@ -11,12 +11,13 @@
                 dbcontext.Open()
             End If
             cmd.Connection = dbcontext
-            Dim transaction As SqlClient.SqlTransaction = dbcontext.BeginTransaction
-            cmd.Transaction = transaction
             Return cmd.ExecuteReader(CommandBehavior.CloseConnection)
         Catch ex As Exception
-
             Throw ex
         End Try
+    End Function
+
+    Public Function ValidaColumna(Nombre As String, idataReaderObj As IDataReader) As Object
+        Return idataReaderObj.GetSchemaTable().Columns.Item(Nombre)
     End Function
 End Module

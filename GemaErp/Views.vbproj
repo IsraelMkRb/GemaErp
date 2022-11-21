@@ -43,6 +43,7 @@
     <StartupObject>GemaErp.My.MyApplication</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="DevExpress.BonusSkins.v20.2" />
     <Reference Include="DevExpress.Data.v20.2" />
     <Reference Include="DevExpress.Data.Desktop.v20.2" />
@@ -55,7 +56,14 @@
     <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,6 +97,12 @@
     <Compile Include="Forms\Compras\ComprasRegistroFrm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Compras\RegistrarProveedorFrm.Designer.vb">
+      <DependentUpon>RegistrarProveedorFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Compras\RegistrarProveedorFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\MenuFrm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -106,8 +120,15 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Shared\Utileria.vb" />
     <EmbeddedResource Include="Forms\Catalogos\Productos\ProductosRegistrarFrm.resx">
       <DependentUpon>ProductosRegistrarFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Compras\ComprasRegistroFrm.resx">
+      <DependentUpon>ComprasRegistroFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Compras\RegistrarProveedorFrm.resx">
+      <DependentUpon>RegistrarProveedorFrm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuFrm.resx">
       <DependentUpon>MenuFrm.vb</DependentUpon>

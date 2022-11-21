@@ -56,7 +56,8 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=TERM3\SQLEXPRESSGM;Initial Catalog=Gema_Db;User=dbi;Password=dbi01")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=SISTEMAS-ISRAEL\SQLEXPRESS;Initial Catalog=Gema_Db;Integrated Securit"& _ 
+            "y=true;")>  _
         Public ReadOnly Property ConnectionString() As String
             Get
                 Return CType(Me("ConnectionString"),String)
