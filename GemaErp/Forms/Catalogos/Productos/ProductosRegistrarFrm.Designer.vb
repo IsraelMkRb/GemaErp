@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ProductosRegistrarFrm
     Inherits DevExpress.XtraEditors.XtraForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,218 +17,351 @@ Partial Class ProductosRegistrarFrm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ProductosRegistrarFrm))
-        Me.TablePanel1 = New DevExpress.Utils.Layout.TablePanel()
-        Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextEdit4 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit3 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
-        Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
-        Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
-        Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
-        Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.DataLayoutControl1 = New DevExpress.XtraDataLayout.DataLayoutControl()
         Me.ItemsListGrid = New DevExpress.XtraGrid.GridControl()
-        Me.ListItemsView = New DevExpress.XtraGrid.Views.Grid.GridView()
-        CType(Me.TablePanel1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TablePanel1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ListaProductos = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.ColID = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colNombre = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.ID_TextArea = New DevExpress.XtraEditors.TextEdit()
+        Me.Nombre_TextArea = New DevExpress.XtraEditors.TextEdit()
+        Me.Precio_TextArea = New DevExpress.XtraEditors.TextEdit()
+        Me.SKU_TextArea = New DevExpress.XtraEditors.TextEdit()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
+        Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem8 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.SplitterItem1 = New DevExpress.XtraLayout.SplitterItem()
+        Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem()
+        CType(Me.DataLayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataLayoutControl1.SuspendLayout()
         CType(Me.ItemsListGrid, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ListItemsView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ListaProductos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ID_TextArea.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Nombre_TextArea.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Precio_TextArea.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SKU_TextArea.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TablePanel1
+        'DataLayoutControl1
         '
-        Me.TablePanel1.Columns.AddRange(New DevExpress.Utils.Layout.TablePanelColumn() {New DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 16.97!), New DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 43.03!)})
-        Me.TablePanel1.Controls.Add(Me.LabelControl1)
-        Me.TablePanel1.Controls.Add(Me.Panel1)
-        Me.TablePanel1.Controls.Add(Me.ItemsListGrid)
-        Me.TablePanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TablePanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TablePanel1.Name = "TablePanel1"
-        Me.TablePanel1.Rows.AddRange(New DevExpress.Utils.Layout.TablePanelRow() {New DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26.0!), New DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26.0!)})
-        Me.TablePanel1.Size = New System.Drawing.Size(898, 417)
-        Me.TablePanel1.TabIndex = 0
-        '
-        'LabelControl1
-        '
-        Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl1.Appearance.Options.UseFont = True
-        Me.LabelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-        Me.TablePanel1.SetColumn(Me.LabelControl1, 0)
-        Me.LabelControl1.Location = New System.Drawing.Point(3, 4)
-        Me.LabelControl1.Name = "LabelControl1"
-        Me.TablePanel1.SetRow(Me.LabelControl1, 0)
-        Me.LabelControl1.Size = New System.Drawing.Size(95, 17)
-        Me.LabelControl1.TabIndex = 1
-        Me.LabelControl1.Text = "Articulos"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TablePanel1.SetColumn(Me.Panel1, 1)
-        Me.Panel1.Controls.Add(Me.TextEdit4)
-        Me.Panel1.Controls.Add(Me.TextEdit3)
-        Me.Panel1.Controls.Add(Me.TextEdit2)
-        Me.Panel1.Controls.Add(Me.TextEdit1)
-        Me.Panel1.Controls.Add(Me.LabelControl5)
-        Me.Panel1.Controls.Add(Me.LabelControl4)
-        Me.Panel1.Controls.Add(Me.LabelControl3)
-        Me.Panel1.Controls.Add(Me.LabelControl2)
-        Me.Panel1.Controls.Add(Me.SimpleButton1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(257, 29)
-        Me.Panel1.Name = "Panel1"
-        Me.TablePanel1.SetRow(Me.Panel1, 1)
-        Me.Panel1.Size = New System.Drawing.Size(638, 385)
-        Me.Panel1.TabIndex = 1
-        '
-        'TextEdit4
-        '
-        Me.TextEdit4.Location = New System.Drawing.Point(257, 151)
-        Me.TextEdit4.Name = "TextEdit4"
-        Me.TextEdit4.Size = New System.Drawing.Size(114, 20)
-        Me.TextEdit4.TabIndex = 8
-        '
-        'TextEdit3
-        '
-        Me.TextEdit3.Location = New System.Drawing.Point(257, 125)
-        Me.TextEdit3.Name = "TextEdit3"
-        Me.TextEdit3.Size = New System.Drawing.Size(114, 20)
-        Me.TextEdit3.TabIndex = 7
-        '
-        'TextEdit2
-        '
-        Me.TextEdit2.Location = New System.Drawing.Point(257, 99)
-        Me.TextEdit2.Name = "TextEdit2"
-        Me.TextEdit2.Size = New System.Drawing.Size(114, 20)
-        Me.TextEdit2.TabIndex = 6
-        '
-        'TextEdit1
-        '
-        Me.TextEdit1.Location = New System.Drawing.Point(257, 73)
-        Me.TextEdit1.Name = "TextEdit1"
-        Me.TextEdit1.Size = New System.Drawing.Size(114, 20)
-        Me.TextEdit1.TabIndex = 5
-        '
-        'LabelControl5
-        '
-        Me.LabelControl5.Location = New System.Drawing.Point(232, 154)
-        Me.LabelControl5.Name = "LabelControl5"
-        Me.LabelControl5.Size = New System.Drawing.Size(19, 13)
-        Me.LabelControl5.TabIndex = 4
-        Me.LabelControl5.Text = "SKU"
-        '
-        'LabelControl4
-        '
-        Me.LabelControl4.Location = New System.Drawing.Point(223, 128)
-        Me.LabelControl4.Name = "LabelControl4"
-        Me.LabelControl4.Size = New System.Drawing.Size(28, 13)
-        Me.LabelControl4.TabIndex = 3
-        Me.LabelControl4.Text = "Costo"
-        '
-        'LabelControl3
-        '
-        Me.LabelControl3.Location = New System.Drawing.Point(214, 102)
-        Me.LabelControl3.Name = "LabelControl3"
-        Me.LabelControl3.Size = New System.Drawing.Size(37, 13)
-        Me.LabelControl3.TabIndex = 2
-        Me.LabelControl3.Text = "Nombre"
-        '
-        'LabelControl2
-        '
-        Me.LabelControl2.Location = New System.Drawing.Point(241, 76)
-        Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(10, 13)
-        Me.LabelControl2.TabIndex = 1
-        Me.LabelControl2.Text = "Id"
-        '
-        'SimpleButton1
-        '
-        Me.SimpleButton1.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.SimpleButton1.Appearance.BackColor2 = System.Drawing.Color.White
-        Me.SimpleButton1.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SimpleButton1.Appearance.Options.UseBackColor = True
-        Me.SimpleButton1.Appearance.Options.UseBorderColor = True
-        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(3, 3)
-        Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(129, 32)
-        Me.SimpleButton1.TabIndex = 0
-        Me.SimpleButton1.Text = "Guardar"
+        Me.DataLayoutControl1.Controls.Add(Me.ItemsListGrid)
+        Me.DataLayoutControl1.Controls.Add(Me.ID_TextArea)
+        Me.DataLayoutControl1.Controls.Add(Me.Nombre_TextArea)
+        Me.DataLayoutControl1.Controls.Add(Me.Precio_TextArea)
+        Me.DataLayoutControl1.Controls.Add(Me.SKU_TextArea)
+        Me.DataLayoutControl1.Controls.Add(Me.SimpleButton1)
+        Me.DataLayoutControl1.Controls.Add(Me.SimpleButton2)
+        Me.DataLayoutControl1.Controls.Add(Me.SimpleButton3)
+        Me.DataLayoutControl1.Controls.Add(Me.SimpleButton4)
+        Me.DataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataLayoutControl1.Location = New System.Drawing.Point(0, 0)
+        Me.DataLayoutControl1.Name = "DataLayoutControl1"
+        Me.DataLayoutControl1.Root = Me.Root
+        Me.DataLayoutControl1.Size = New System.Drawing.Size(898, 417)
+        Me.DataLayoutControl1.TabIndex = 0
+        Me.DataLayoutControl1.Text = "DataLayoutControl1"
         '
         'ItemsListGrid
         '
-        Me.TablePanel1.SetColumn(Me.ItemsListGrid, 0)
-        Me.ItemsListGrid.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ItemsListGrid.Location = New System.Drawing.Point(3, 29)
-        Me.ItemsListGrid.MainView = Me.ListItemsView
+        Me.ItemsListGrid.Location = New System.Drawing.Point(12, 12)
+        Me.ItemsListGrid.MainView = Me.ListaProductos
         Me.ItemsListGrid.Name = "ItemsListGrid"
-        Me.TablePanel1.SetRow(Me.ItemsListGrid, 1)
-        Me.ItemsListGrid.Size = New System.Drawing.Size(248, 385)
-        Me.ItemsListGrid.TabIndex = 0
-        Me.ItemsListGrid.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.ListItemsView})
+        Me.ItemsListGrid.Size = New System.Drawing.Size(196, 393)
+        Me.ItemsListGrid.TabIndex = 4
+        Me.ItemsListGrid.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.ListaProductos})
         '
-        'ListItemsView
+        'ListaProductos
         '
-        Me.ListItemsView.GridControl = Me.ItemsListGrid
-        Me.ListItemsView.Name = "ListItemsView"
-        Me.ListItemsView.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ListItemsView.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ListItemsView.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ListItemsView.OptionsBehavior.Editable = False
-        Me.ListItemsView.OptionsFilter.AllowAutoFilterConditionChange = DevExpress.Utils.DefaultBoolean.[True]
-        Me.ListItemsView.OptionsFind.AlwaysVisible = True
-        Me.ListItemsView.OptionsFind.Behavior = DevExpress.XtraEditors.FindPanelBehavior.Filter
-        Me.ListItemsView.OptionsFind.Condition = DevExpress.Data.Filtering.FilterCondition.Contains
-        Me.ListItemsView.OptionsFind.FindDelay = 100
-        Me.ListItemsView.OptionsFind.FindMode = DevExpress.XtraEditors.FindMode.Always
-        Me.ListItemsView.OptionsView.ShowGroupPanel = False
+        Me.ListaProductos.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.ColID, Me.colNombre})
+        Me.ListaProductos.GridControl = Me.ItemsListGrid
+        Me.ListaProductos.Name = "ListaProductos"
+        Me.ListaProductos.OptionsView.ShowGroupPanel = False
+        '
+        'ColID
+        '
+        Me.ColID.Caption = "ID"
+        Me.ColID.FieldName = "ID"
+        Me.ColID.Name = "ColID"
+        Me.ColID.Visible = True
+        Me.ColID.VisibleIndex = 0
+        '
+        'colNombre
+        '
+        Me.colNombre.Caption = "Nombre"
+        Me.colNombre.FieldName = "Nombre"
+        Me.colNombre.Name = "colNombre"
+        Me.colNombre.Visible = True
+        Me.colNombre.VisibleIndex = 1
+        '
+        'ID_TextArea
+        '
+        Me.ID_TextArea.Location = New System.Drawing.Point(271, 72)
+        Me.ID_TextArea.Name = "ID_TextArea"
+        Me.ID_TextArea.Size = New System.Drawing.Size(615, 20)
+        Me.ID_TextArea.StyleController = Me.DataLayoutControl1
+        Me.ID_TextArea.TabIndex = 5
+        '
+        'Nombre_TextArea
+        '
+        Me.Nombre_TextArea.Location = New System.Drawing.Point(271, 96)
+        Me.Nombre_TextArea.Name = "Nombre_TextArea"
+        Me.Nombre_TextArea.Size = New System.Drawing.Size(615, 20)
+        Me.Nombre_TextArea.StyleController = Me.DataLayoutControl1
+        Me.Nombre_TextArea.TabIndex = 6
+        '
+        'Precio_TextArea
+        '
+        Me.Precio_TextArea.Location = New System.Drawing.Point(271, 120)
+        Me.Precio_TextArea.Name = "Precio_TextArea"
+        Me.Precio_TextArea.Size = New System.Drawing.Size(615, 20)
+        Me.Precio_TextArea.StyleController = Me.DataLayoutControl1
+        Me.Precio_TextArea.TabIndex = 7
+        '
+        'SKU_TextArea
+        '
+        Me.SKU_TextArea.Location = New System.Drawing.Point(271, 144)
+        Me.SKU_TextArea.Name = "SKU_TextArea"
+        Me.SKU_TextArea.Size = New System.Drawing.Size(615, 20)
+        Me.SKU_TextArea.StyleController = Me.DataLayoutControl1
+        Me.SKU_TextArea.TabIndex = 8
+        '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(222, 12)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(156, 36)
+        Me.SimpleButton1.StyleController = Me.DataLayoutControl1
+        Me.SimpleButton1.TabIndex = 9
+        Me.SimpleButton1.Text = "Nuevo"
+        '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.Location = New System.Drawing.Point(382, 12)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(164, 36)
+        Me.SimpleButton2.StyleController = Me.DataLayoutControl1
+        Me.SimpleButton2.TabIndex = 10
+        Me.SimpleButton2.Text = "Guardar"
+        '
+        'SimpleButton3
+        '
+        Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton3.Location = New System.Drawing.Point(550, 12)
+        Me.SimpleButton3.Name = "SimpleButton3"
+        Me.SimpleButton3.Size = New System.Drawing.Size(167, 36)
+        Me.SimpleButton3.StyleController = Me.DataLayoutControl1
+        Me.SimpleButton3.TabIndex = 11
+        Me.SimpleButton3.Text = "Borrar"
+        '
+        'SimpleButton4
+        '
+        Me.SimpleButton4.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton4.Location = New System.Drawing.Point(721, 12)
+        Me.SimpleButton4.Name = "SimpleButton4"
+        Me.SimpleButton4.Size = New System.Drawing.Size(165, 36)
+        Me.SimpleButton4.StyleController = Me.DataLayoutControl1
+        Me.SimpleButton4.TabIndex = 12
+        Me.SimpleButton4.Text = "Cancelar"
+        '
+        'Root
+        '
+        Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
+        Me.Root.GroupBordersVisible = False
+        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem6, Me.LayoutControlItem7, Me.LayoutControlItem8, Me.LayoutControlItem9, Me.SplitterItem1, Me.EmptySpaceItem1, Me.EmptySpaceItem2})
+        Me.Root.Name = "Root"
+        Me.Root.Size = New System.Drawing.Size(898, 417)
+        Me.Root.TextVisible = False
+        '
+        'LayoutControlItem1
+        '
+        Me.LayoutControlItem1.Control = Me.ItemsListGrid
+        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem1.Name = "LayoutControlItem1"
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(200, 397)
+        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem1.TextVisible = False
+        '
+        'LayoutControlItem2
+        '
+        Me.LayoutControlItem2.Control = Me.ID_TextArea
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(210, 60)
+        Me.LayoutControlItem2.Name = "LayoutControlItem2"
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(668, 24)
+        Me.LayoutControlItem2.Text = "ID"
+        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(37, 13)
+        '
+        'LayoutControlItem3
+        '
+        Me.LayoutControlItem3.Control = Me.Nombre_TextArea
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(210, 84)
+        Me.LayoutControlItem3.Name = "LayoutControlItem3"
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(668, 24)
+        Me.LayoutControlItem3.Text = "Nombre"
+        Me.LayoutControlItem3.TextSize = New System.Drawing.Size(37, 13)
+        '
+        'LayoutControlItem4
+        '
+        Me.LayoutControlItem4.Control = Me.Precio_TextArea
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(210, 108)
+        Me.LayoutControlItem4.Name = "LayoutControlItem4"
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(668, 24)
+        Me.LayoutControlItem4.Text = "Precio"
+        Me.LayoutControlItem4.TextSize = New System.Drawing.Size(37, 13)
+        '
+        'LayoutControlItem5
+        '
+        Me.LayoutControlItem5.Control = Me.SKU_TextArea
+        Me.LayoutControlItem5.Location = New System.Drawing.Point(210, 132)
+        Me.LayoutControlItem5.Name = "LayoutControlItem5"
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(668, 265)
+        Me.LayoutControlItem5.Text = "SKU"
+        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(37, 13)
+        '
+        'LayoutControlItem6
+        '
+        Me.LayoutControlItem6.Control = Me.SimpleButton1
+        Me.LayoutControlItem6.Location = New System.Drawing.Point(210, 0)
+        Me.LayoutControlItem6.Name = "LayoutControlItem6"
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(160, 60)
+        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem6.TextVisible = False
+        '
+        'LayoutControlItem7
+        '
+        Me.LayoutControlItem7.Control = Me.SimpleButton2
+        Me.LayoutControlItem7.Location = New System.Drawing.Point(370, 0)
+        Me.LayoutControlItem7.Name = "LayoutControlItem7"
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(168, 60)
+        Me.LayoutControlItem7.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem7.TextVisible = False
+        '
+        'LayoutControlItem8
+        '
+        Me.LayoutControlItem8.Control = Me.SimpleButton3
+        Me.LayoutControlItem8.Location = New System.Drawing.Point(538, 0)
+        Me.LayoutControlItem8.Name = "LayoutControlItem8"
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(171, 60)
+        Me.LayoutControlItem8.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem8.TextVisible = False
+        '
+        'LayoutControlItem9
+        '
+        Me.LayoutControlItem9.Control = Me.SimpleButton4
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(709, 0)
+        Me.LayoutControlItem9.Name = "LayoutControlItem9"
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(169, 40)
+        Me.LayoutControlItem9.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem9.TextVisible = False
+        '
+        'SplitterItem1
+        '
+        Me.SplitterItem1.AllowHotTrack = True
+        Me.SplitterItem1.Location = New System.Drawing.Point(200, 0)
+        Me.SplitterItem1.Name = "SplitterItem1"
+        Me.SplitterItem1.Size = New System.Drawing.Size(10, 397)
+        '
+        'EmptySpaceItem1
+        '
+        Me.EmptySpaceItem1.AllowHotTrack = False
+        Me.EmptySpaceItem1.Location = New System.Drawing.Point(709, 40)
+        Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
+        Me.EmptySpaceItem1.Size = New System.Drawing.Size(169, 10)
+        Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'EmptySpaceItem2
+        '
+        Me.EmptySpaceItem2.AllowHotTrack = False
+        Me.EmptySpaceItem2.Location = New System.Drawing.Point(709, 50)
+        Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
+        Me.EmptySpaceItem2.Size = New System.Drawing.Size(169, 10)
+        Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
         '
         'ProductosRegistrarFrm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(898, 417)
-        Me.Controls.Add(Me.TablePanel1)
+        Me.Controls.Add(Me.DataLayoutControl1)
         Me.Name = "ProductosRegistrarFrm"
         Me.Text = "Registrar"
-        CType(Me.TablePanel1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TablePanel1.ResumeLayout(False)
-        Me.TablePanel1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataLayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.DataLayoutControl1.ResumeLayout(False)
         CType(Me.ItemsListGrid, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ListItemsView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ListaProductos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ID_TextArea.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Nombre_TextArea.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Precio_TextArea.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SKU_TextArea.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SplitterItem1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents TablePanel1 As DevExpress.Utils.Layout.TablePanel
+    Friend WithEvents DataLayoutControl1 As DevExpress.XtraDataLayout.DataLayoutControl
     Friend WithEvents ItemsListGrid As DevExpress.XtraGrid.GridControl
-    Friend WithEvents ListItemsView As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents ListaProductos As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents Root As DevExpress.XtraLayout.LayoutControlGroup
+    Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents ID_TextArea As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Nombre_TextArea As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Precio_TextArea As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents SKU_TextArea As DevExpress.XtraEditors.TextEdit
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents TextEdit4 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit3 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents LabelControl5 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents LayoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents LayoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents LayoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents LayoutControlItem6 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents SimpleButton4 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents LayoutControlItem7 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents LayoutControlItem8 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents LayoutControlItem9 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents SplitterItem1 As DevExpress.XtraLayout.SplitterItem
+    Friend WithEvents EmptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
+    Friend WithEvents EmptySpaceItem2 As DevExpress.XtraLayout.EmptySpaceItem
+    Friend WithEvents ColID As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colNombre As DevExpress.XtraGrid.Columns.GridColumn
 End Class
