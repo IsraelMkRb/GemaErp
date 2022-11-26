@@ -25,4 +25,11 @@ Partial Public Class MenuFrm
         ProveedorRegistrarFrm.Show()
         Utileria.HideWait()
     End Sub
+
+    Private Sub BarButtonItem2_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem2.ItemClick
+        Utileria.ShowWait(Me)
+        Dim Productoporproveedorfrm As New ProductoPorProveedorFrm With {.MdiParent = Me, .WindowState = FormWindowState.Maximized}
+        Productoporproveedorfrm.Show()
+        Utileria.HideWait()
+    End Sub
 End Class

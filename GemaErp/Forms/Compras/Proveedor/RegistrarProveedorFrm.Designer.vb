@@ -31,10 +31,10 @@ Partial Class RegistrarProveedorFrm
         Me.ListaProveedoresGrv = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.colID = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colNombre = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
+        Me.NuevoBtn = New DevExpress.XtraEditors.SimpleButton()
+        Me.GuardarBtn = New DevExpress.XtraEditors.SimpleButton()
+        Me.BorrarBtn = New DevExpress.XtraEditors.SimpleButton()
+        Me.CancelarBtn = New DevExpress.XtraEditors.SimpleButton()
         Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
@@ -92,10 +92,10 @@ Partial Class RegistrarProveedorFrm
         Me.DataLayoutControl1.Controls.Add(Me.Nombre_TextArea)
         Me.DataLayoutControl1.Controls.Add(Me.ID_TextArea)
         Me.DataLayoutControl1.Controls.Add(Me.ListaProveedoresGrd)
-        Me.DataLayoutControl1.Controls.Add(Me.SimpleButton1)
-        Me.DataLayoutControl1.Controls.Add(Me.SimpleButton2)
-        Me.DataLayoutControl1.Controls.Add(Me.SimpleButton3)
-        Me.DataLayoutControl1.Controls.Add(Me.SimpleButton4)
+        Me.DataLayoutControl1.Controls.Add(Me.NuevoBtn)
+        Me.DataLayoutControl1.Controls.Add(Me.GuardarBtn)
+        Me.DataLayoutControl1.Controls.Add(Me.BorrarBtn)
+        Me.DataLayoutControl1.Controls.Add(Me.CancelarBtn)
         Me.DataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataLayoutControl1.Location = New System.Drawing.Point(0, 0)
         Me.DataLayoutControl1.Name = "DataLayoutControl1"
@@ -196,45 +196,45 @@ Partial Class RegistrarProveedorFrm
         Me.colNombre.VisibleIndex = 1
         Me.colNombre.Width = 94
         '
-        'SimpleButton1
+        'NuevoBtn
         '
-        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(255, 89)
-        Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(239, 36)
-        Me.SimpleButton1.StyleController = Me.DataLayoutControl1
-        Me.SimpleButton1.TabIndex = 9
-        Me.SimpleButton1.Text = "Nuevo"
+        Me.NuevoBtn.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.NuevoBtn.Location = New System.Drawing.Point(255, 89)
+        Me.NuevoBtn.Name = "NuevoBtn"
+        Me.NuevoBtn.Size = New System.Drawing.Size(239, 36)
+        Me.NuevoBtn.StyleController = Me.DataLayoutControl1
+        Me.NuevoBtn.TabIndex = 9
+        Me.NuevoBtn.Text = "Nuevo"
         '
-        'SimpleButton2
+        'GuardarBtn
         '
-        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(510, 89)
-        Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(236, 36)
-        Me.SimpleButton2.StyleController = Me.DataLayoutControl1
-        Me.SimpleButton2.TabIndex = 10
-        Me.SimpleButton2.Text = "Guardar"
+        Me.GuardarBtn.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.GuardarBtn.Location = New System.Drawing.Point(510, 89)
+        Me.GuardarBtn.Name = "GuardarBtn"
+        Me.GuardarBtn.Size = New System.Drawing.Size(236, 36)
+        Me.GuardarBtn.StyleController = Me.DataLayoutControl1
+        Me.GuardarBtn.TabIndex = 10
+        Me.GuardarBtn.Text = "Guardar"
         '
-        'SimpleButton3
+        'BorrarBtn
         '
-        Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton3.Location = New System.Drawing.Point(762, 89)
-        Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(231, 36)
-        Me.SimpleButton3.StyleController = Me.DataLayoutControl1
-        Me.SimpleButton3.TabIndex = 11
-        Me.SimpleButton3.Text = "Borrar"
+        Me.BorrarBtn.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
+        Me.BorrarBtn.Location = New System.Drawing.Point(762, 89)
+        Me.BorrarBtn.Name = "BorrarBtn"
+        Me.BorrarBtn.Size = New System.Drawing.Size(231, 36)
+        Me.BorrarBtn.StyleController = Me.DataLayoutControl1
+        Me.BorrarBtn.TabIndex = 11
+        Me.BorrarBtn.Text = "Borrar"
         '
-        'SimpleButton4
+        'CancelarBtn
         '
-        Me.SimpleButton4.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton4.Location = New System.Drawing.Point(1009, 89)
-        Me.SimpleButton4.Name = "SimpleButton4"
-        Me.SimpleButton4.Size = New System.Drawing.Size(221, 36)
-        Me.SimpleButton4.StyleController = Me.DataLayoutControl1
-        Me.SimpleButton4.TabIndex = 12
-        Me.SimpleButton4.Text = "Cancelar"
+        Me.CancelarBtn.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
+        Me.CancelarBtn.Location = New System.Drawing.Point(1009, 89)
+        Me.CancelarBtn.Name = "CancelarBtn"
+        Me.CancelarBtn.Size = New System.Drawing.Size(221, 36)
+        Me.CancelarBtn.StyleController = Me.DataLayoutControl1
+        Me.CancelarBtn.TabIndex = 12
+        Me.CancelarBtn.Text = "Cancelar"
         '
         'Root
         '
@@ -292,7 +292,7 @@ Partial Class RegistrarProveedorFrm
         '
         'LayoutControlItem6
         '
-        Me.LayoutControlItem6.Control = Me.SimpleButton1
+        Me.LayoutControlItem6.Control = Me.NuevoBtn
         Me.LayoutControlItem6.Location = New System.Drawing.Point(243, 77)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
         Me.LayoutControlItem6.Size = New System.Drawing.Size(243, 50)
@@ -301,7 +301,7 @@ Partial Class RegistrarProveedorFrm
         '
         'LayoutControlItem8
         '
-        Me.LayoutControlItem8.Control = Me.SimpleButton3
+        Me.LayoutControlItem8.Control = Me.BorrarBtn
         Me.LayoutControlItem8.Location = New System.Drawing.Point(750, 77)
         Me.LayoutControlItem8.Name = "LayoutControlItem8"
         Me.LayoutControlItem8.Size = New System.Drawing.Size(235, 50)
@@ -310,7 +310,7 @@ Partial Class RegistrarProveedorFrm
         '
         'LayoutControlItem7
         '
-        Me.LayoutControlItem7.Control = Me.SimpleButton2
+        Me.LayoutControlItem7.Control = Me.GuardarBtn
         Me.LayoutControlItem7.Location = New System.Drawing.Point(498, 77)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
         Me.LayoutControlItem7.Size = New System.Drawing.Size(240, 50)
@@ -319,7 +319,7 @@ Partial Class RegistrarProveedorFrm
         '
         'LayoutControlItem9
         '
-        Me.LayoutControlItem9.Control = Me.SimpleButton4
+        Me.LayoutControlItem9.Control = Me.CancelarBtn
         Me.LayoutControlItem9.Location = New System.Drawing.Point(997, 77)
         Me.LayoutControlItem9.Name = "LayoutControlItem9"
         Me.LayoutControlItem9.Size = New System.Drawing.Size(225, 40)
@@ -401,7 +401,7 @@ Partial Class RegistrarProveedorFrm
         Me.ClientSize = New System.Drawing.Size(1242, 476)
         Me.Controls.Add(Me.DataLayoutControl1)
         Me.Name = "RegistrarProveedorFrm"
-        Me.Text = "RegistrarProveedorFrm"
+        Me.Text = "Registrar Proveedor"
         CType(Me.DataLayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.DataLayoutControl1.ResumeLayout(False)
         CType(Me.Telefono_TextArea.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -448,10 +448,10 @@ Partial Class RegistrarProveedorFrm
     Friend WithEvents LayoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents SimpleButton4 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents NuevoBtn As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents GuardarBtn As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents BorrarBtn As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents CancelarBtn As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents LayoutControlItem6 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem8 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem7 As DevExpress.XtraLayout.LayoutControlItem

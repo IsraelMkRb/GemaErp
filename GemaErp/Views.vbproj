@@ -97,10 +97,16 @@
     <Compile Include="Forms\Compras\ComprasRegistroFrm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Compras\RegistrarProveedorFrm.Designer.vb">
+    <Compile Include="Forms\Compras\Proveedor\ProductoPorProveedorFrm.Designer.vb">
+      <DependentUpon>ProductoPorProveedorFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Compras\Proveedor\ProductoPorProveedorFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Compras\Proveedor\RegistrarProveedorFrm.Designer.vb">
       <DependentUpon>RegistrarProveedorFrm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Compras\RegistrarProveedorFrm.vb">
+    <Compile Include="Forms\Compras\Proveedor\RegistrarProveedorFrm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MenuFrm.vb">
@@ -127,7 +133,10 @@
     <EmbeddedResource Include="Forms\Compras\ComprasRegistroFrm.resx">
       <DependentUpon>ComprasRegistroFrm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Compras\RegistrarProveedorFrm.resx">
+    <EmbeddedResource Include="Forms\Compras\Proveedor\ProductoPorProveedorFrm.resx">
+      <DependentUpon>ProductoPorProveedorFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Compras\Proveedor\RegistrarProveedorFrm.resx">
       <DependentUpon>RegistrarProveedorFrm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuFrm.resx">
@@ -183,6 +192,9 @@
       <Project>{bcb8a801-0e42-438b-86ec-1529b2c0953d}</Project>
       <Name>BusinessProcess</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
